@@ -36,7 +36,7 @@ serde_derive = { version = "1.0.104", optional = true }
 serde-big-array = { version = "0.1", optional = true }
 serde-sgx = { git = "https://github.com/yunuseozer/serde-sgx", package = 'serde', optional = true }
 serde_derive-sgx = { git = "https://github.com/yunuseozer/serde-sgx", package = 'serde_derive', optional = true }
-serde-big-array-sgx = { git = "https://github.com/mesalock-linux/serde-big-array-sgx", package = 'serde-big-array', optional = true }
+serde-big-array-sgx = { git = "https://github.com/yunuseozer/serde-big-array-sgx", package = 'serde-big-array', optional = true }
 
 [target.'cfg(not(target_env = "sgx"))'.dependencies]
 sgx_tcrypto = { rev = "v1.1.4-upgrade", git = "https://github.com/yunuseozer/incubator-teaclave-sgx-sdk.git", optional = true }
