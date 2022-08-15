@@ -34,8 +34,8 @@ itertools = { version = "*", default-features = false }
 serde = { version = "1.0.104", optional = true }
 serde_derive = { version = "1.0.104", optional = true }
 serde-big-array = { version = "0.1", optional = true }
-serde-sgx = { git = "https://github.com/yunuseozer/serde-sgx", package = 'serde', optional = true }
-serde_derive-sgx = { git = "https://github.com/yunuseozer/serde-sgx", package = 'serde_derive', optional = true }
+serde-sgx = { rev = "sgx_1.1.4", git = "https://github.com/yunuseozer/serde-sgx", package = 'serde', optional = true }
+serde_derive-sgx = { rev = "sgx_1.1.4", git = "https://github.com/yunuseozer/serde-sgx", package = 'serde_derive', optional = true }
 serde-big-array-sgx = { rev = "sgx_1.1.4", git = "https://github.com/yunuseozer/serde-big-array-sgx", package = 'serde-big-array', optional = true }
 
 [target.'cfg(not(target_env = "sgx"))'.dependencies]
